@@ -1,0 +1,37 @@
+@import "variables";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.navbar-container {
+  margin-top: -1px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.jumbo-header.home {
+  @media screen and (min-width: $screen-md-min) {
+    padding:  {
+      top: 120px;
+      bottom: 120px;
+    }
+  }
+}
+
+.navbar-brand {
+  @include text-hide();
+  &.planview {
+    width: 80px;
+    background: {
+      color: blue;
+    }
+    &:hover {
+      background-color: darken(blue, 5%);
+    }
+  }
+}
